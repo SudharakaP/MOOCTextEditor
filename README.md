@@ -1,6 +1,6 @@
 ## Object Oriented Programming in Java - Coursera
 
-This repository contain the work I have done with regard to the **Data structures: Measuring and Optimizing Performance** course in Coursera under the specialization, **Java Programming: Object-Oriented Design of Data Structures**.
+This repository contain the work I have done with regard to the **Data structures: Measuring and Optimizing Performance** course in Coursera under the specialization, **Java Programming: Object-Oriented Design of Data Structures**. The project for this course consist of a text editor application along with a GUI which uses efficient data structures to spellcheck and other text manipulations.
 
 ## Files by Week
 
