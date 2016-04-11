@@ -50,9 +50,6 @@ public abstract class Document {
 	// next week when we implement the EfficientDocument class.
 	protected int countSyllables(String word)
 	{
-		// TODO: Implement this method so that you can call it from the 
-	    // getNumSyllables method in BasicDocument (module 1) and 
-	    // EfficientDocument (module 2).
 		int count = 0;
 		int num = 0;
 	
@@ -137,7 +134,6 @@ public abstract class Document {
 	/** return the Flesch readability score of this document */
 	public double getFleschScore()
 	{
-	    // TODO: Implement this method
 		double words = getNumWords();
 		double sentences = getNumSentences();
 		double syllables = getNumSyllables();

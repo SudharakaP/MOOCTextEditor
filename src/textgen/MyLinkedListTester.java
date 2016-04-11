@@ -113,7 +113,6 @@ public class MyLinkedListTester {
 		assertEquals("Remove: check element 0 is correct ", (Integer)21, list1.get(0));
 		assertEquals("Remove: check size is correct ", 2, list1.size());
 		
-		// TODO: Add more tests here
 		int b = list1.remove(1);
 		assertEquals("Remove: check b is correct ", 42, b);
 		assertEquals("Remove: check element 0 is correct ", (Integer)21, list1.get(0));
@@ -140,7 +139,6 @@ public class MyLinkedListTester {
 	@Test
 	public void testAddEnd()
 	{
-        // TODO: implement this test
 		list1.add(21);
 		assertEquals("Add: Check whether element is added", (Integer)21, list1.get(3));
 		assertEquals("Add: Check whether the element 0 is correct", (Integer)65, list1.get(0));
@@ -153,7 +151,6 @@ public class MyLinkedListTester {
 	@Test
 	public void testSize()
 	{
-		// TODO: implement this test
 		list1.add(21);
 		assertEquals("Add: Check whether the size is correct", 4, list1.size());
 	}
@@ -165,7 +162,6 @@ public class MyLinkedListTester {
 	@Test
 	public void testAddAtIndex()
 	{
-        // TODO: implement this test
 		list1.add(1, 32);
 		assertEquals("Add: Check whether element is added", (Integer)32, list1.get(1));
 		assertEquals("Add: Check whether the element 0 is correct", (Integer)65, list1.get(0));
@@ -202,7 +198,6 @@ public class MyLinkedListTester {
 	@Test
 	public void testSet()
 	{
-	    // TODO: implement this test
 	    shortList.set(1, "C");
 	    assertEquals("Set: Check whether the set method works", "C", shortList.get(1));
 	    
@@ -234,7 +229,4 @@ public class MyLinkedListTester {
 	    assertEquals("Set: Check whether other elements are changed", (Integer)65, list1.get(0));
 	    assertEquals("Set: Check whether other elements are changed", (Integer)42, list1.get(2));
 	}	
-	
-	// TODO: Optionally add more test methods.
-	
 }

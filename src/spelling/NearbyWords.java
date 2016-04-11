@@ -75,8 +75,7 @@ public class NearbyWords implements SpellingSuggest {
 	 * @param wordsOnly controls whether to return only words or any String
 	 * @return
 	 */
-	public void insertions(String s, List<String> currentList, boolean wordsOnly ) {
-		// TODO: Implement this method  
+	public void insertions(String s, List<String> currentList, boolean wordsOnly ) {  
 		// for each position in the word s and for all possible 
 		// replacement characters
 		for(int index = 0; index <= s.length(); index++){
@@ -104,7 +103,6 @@ public class NearbyWords implements SpellingSuggest {
 	 * @return
 	 */
 	public void deletions(String s, List<String> currentList, boolean wordsOnly ) {
-		// TODO: Implement this method
 		// for each position in the word s and for all possible 
 		// replacement characters
 		for(int index = 0; index < s.length(); index++){
@@ -145,7 +143,6 @@ public class NearbyWords implements SpellingSuggest {
 		// used to make the search stop if it takes too much time
 		int max_iter = 0;
 					
-		// TODO: Implement the remainder of this method, see assignment for algorithm
 		while (!queue.isEmpty() && max_iter < THRESHOLD){
 			String curr = queue.remove(0);
 			List<String> neighbours = distanceOne(curr, false);

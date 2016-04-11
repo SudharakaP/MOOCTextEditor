@@ -31,7 +31,6 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	@Override
 	public void train(String sourceText)
 	{
-		// TODO: Implement this method
 		String[] sourceTextSplit = sourceText.split(" ");
 		starter = sourceTextSplit[0];
 		String prevWord = starter;
@@ -78,7 +77,6 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	 */
 	@Override
 	public String generateText(int numWords) {
-	    // TODO: Implement this method
 		if (numWords == 0){
 			return "";
 		}
@@ -123,13 +121,9 @@ public class MarkovTextGeneratorLoL implements MarkovTextGenerator {
 	@Override
 	public void retrain(String sourceText)
 	{
-		// TODO: Implement this method.
 		wordList.clear();
 		train(sourceText);
-	}
-	
-	// TODO: Add any private helper methods you need here.
-	
+	}	
 	
 	/**
 	 * This is a minimal set of tests.  Note that it can be difficult
@@ -210,7 +204,6 @@ class ListNode
 	
 	public String getRandomNextWord(Random generator)
 	{
-		// TODO: Implement this method
 	    // The random number generator should be passed from 
 	    // the MarkovTextGeneratorLoL class
 		int ranNum = generator.nextInt(nextWords.size());

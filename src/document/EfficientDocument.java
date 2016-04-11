@@ -43,9 +43,6 @@ public class EfficientDocument extends Document {
 		// Words are only strings of letters.  No numbers.
 		List<String> tokens = getTokens("[!?.]+|[a-zA-Z]+");
 		
-		// TODO: Finish this method.  Remember the countSyllables method from 
-		// Document.  That will come in handy here.
-		
 		for(int i = 0; i < tokens.size(); i++){
 			
 			String token = tokens.get(i);
@@ -76,8 +73,7 @@ public class EfficientDocument extends Document {
 	 * @return The number of words in the document.
 	 */
 	@Override
-	public int getNumWords() {
-		//TODO: write this method.  Hint: It's simple	
+	public int getNumWords() {	
 	    return numWords;
 	}
 
@@ -91,7 +87,6 @@ public class EfficientDocument extends Document {
 	 */
 	@Override
 	public int getNumSentences() {
-        //TODO: write this method.  Hint: It's simple
         return numSentences;
 	}
 
@@ -105,7 +100,6 @@ public class EfficientDocument extends Document {
 	 */
 	@Override
 	public int getNumSyllables() {
-        //TODO: write this method.  Hint: It's simple
         return numSyllables;
 	}
 	
