@@ -6,8 +6,6 @@ import java.io.PrintWriter;
 
 public class NearbyWordsGraderOne {
     public static void main(String args[]) {
-        int tests = 0;
-        int incorrect = 0;
         String feedback = "";
         PrintWriter out;
 
@@ -64,6 +62,7 @@ public class NearbyWordsGraderOne {
             
         } catch (Exception e) {
             out.println("Runtime error: " + e);
+            out.close();
             return;
         }
 

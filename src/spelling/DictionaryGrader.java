@@ -12,8 +12,6 @@ public class DictionaryGrader {
             return;
         }
 
-        int incorrect = 0;
-        int tests = 0;
         String feedback = "";
 
         try {

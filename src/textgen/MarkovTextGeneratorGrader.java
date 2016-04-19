@@ -11,13 +11,11 @@ public class MarkovTextGeneratorGrader {
         try {
             MarkovTextGenerator gen = new MarkovTextGeneratorLoL(new Random());
             
-            int incorrect = 0;
-            int tests = 0;
             String feedback = "";
 
             feedback += "\n** Test 1: Generating text before training...";
             try {
-                String s = gen.generateText(20);
+                gen.generateText(20);
                 feedback += "No error thrown. ";
             } catch (Exception e) {
                 feedback += "Error thrown. ";
@@ -26,7 +24,7 @@ public class MarkovTextGeneratorGrader {
             gen.train("");
             feedback += "\n** Test 2: Generating text after training on an empty file...";
             try {
-                String s = gen.generateText(20);
+                gen.generateText(20);
                 feedback += "No error thrown. ";
             } catch (Exception e) {
                 feedback += "Error thrown. ";
@@ -56,11 +54,9 @@ public class MarkovTextGeneratorGrader {
             feedback += "\n** Test #4: Testing specific word counts...";
             feedback += "'I' appeared " + wordCounts.get("I") + " times. ";
 
-            boolean found = true;
             feedback += "\n** Test #5: Checking that every word is used at least once...";
             feedback += "Done. ";
 
-            found = true;
             feedback += "\n** Test 6: Seeing if last word is always followed by first word...";
             feedback += "Done. ";
 

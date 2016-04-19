@@ -23,8 +23,6 @@ public class WPTreeGrader {
     }
 
     public static void main (String[] args) {
-        int incorrect = 0;
-        int tests = 0;
         String feedback = "";
 
         PrintWriter out;
