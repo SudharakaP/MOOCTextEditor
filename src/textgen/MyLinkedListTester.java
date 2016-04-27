@@ -117,14 +117,14 @@ public class MyLinkedListTester {
 		assertEquals("Remove: check size is correct ", 1, list1.size());
 		
 		try{
-			int c = list1.remove(-1);
+			list1.remove(-1);
 			fail("Check out of bounds");
 		}
 		catch (IndexOutOfBoundsException e){
 		}
 		
 		try{
-			int c = list1.remove(2);
+			list1.remove(2);
 			fail("Check out of bounds");
 		}
 		catch (IndexOutOfBoundsException e){

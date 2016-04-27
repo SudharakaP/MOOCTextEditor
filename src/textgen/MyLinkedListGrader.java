@@ -40,9 +40,7 @@ public class MyLinkedListGrader {
 	
 	public void doTest()
 	{
-                int incorrect = 0;
-                int tests = 0;
-                String feedback = "";
+        String feedback = "";
 		try {
 			out = new PrintWriter("grader_output/module3.part1.out", "utf-8");
 		} catch (Exception e) {
